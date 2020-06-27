@@ -1,0 +1,74 @@
+site_name: WanDevs
+
+theme:
+  name: 'material'
+  language: 'en'
+  theme:
+  palette:
+    primary: teal
+    accent: teal
+  logo: 'img/white.png'
+  favicon: 'img/favicon.ico'
+  feature:
+    tabs: true
+    instant: true
+
+
+nav:
+  - Get Started:
+    - What is Wanchain?: home/index.md 
+    - Wallets: home/wallets.md
+    - Bounties: home/bounties.md
+    - Join the Conversation: home/chat.md
+  - Wanchain Overview:
+    - Technology: overview/tech.md
+    - Galaxy Consensus: overview/galaxy.md
+    - Supported Tokens: overview/tokens.md
+    - Whitepapers: overview/whitepapers.md
+    - WAN Tokenomics: overview/tokenomics.md
+    - Roadmap: overview/roadmap.md
+    - Community: overview/community.md
+    - Partners: overview/partners.md
+    - Wallets: overview/wallets.md
+
+  
+# These social links will be rendered as icons in the footer, as long as the type corresponds to FontAwesome glyph.
+extra:
+  social:
+    - icon: 'brands/github'
+      link: 'https://github.com/wanchain'
+    - icon: 'brands/twitter'
+      link: 'https://twitter.com/wanchain_org'
+    - icon: 'brands/reddit'
+      link: 'https://www.reddit.com/r/wanchain/'
+    - icon: 'brands/medium'
+      link: 'https://medium.com/wanchain-foundation'
+    - icon: 'brands/youtube'
+      link: 'https://www.youtube.com/channel/UCW_i8cncT0d1RyX7YCA_oKQ'
+
+# Extension settings.
+# In addition to the standard extensions, this also requires the PyMdown Extensions by facelessuser: https://github.com/facelessuser/pymdown-extensions
+markdown_extensions:
+  - toc:
+      permalink: True # Generates permanent links for each page section.
+  - admonition # Small descriptive elements for notes, warnings, etc.
+  - pymdownx.arithmatex # Math rendering.
+  - pymdownx.tasklist: # Allows nested and better checkboxes.
+      custom_checkbox: True # Without this setting, checkboxes look rubbish in the material theme.
+  - pymdownx.highlight: # Code syntax highlighting.
+      linenums: True
+  - pymdownx.extra: # Better fenced code blocks, emphasis, footnotes, lists, tables, abbreviations, and raw HTML.
+      pymdownx.betterem:
+        smart_enable: 'all' # Smarter line breaks when emphasising lines.
+  - pymdownx.details # Collapsible admonition-style blocks containing further information.
+  - pymdownx.escapeall # Backslashes escape everything.
+  - pymdownx.caret # Superscripts and insert text.
+  - pymdownx.superfences
+  - pymdownx.tabbed # tabs
+  - pymdownx.tilde # Strikethrough and underlines.
+  - pymdownx.magiclink: # Better links and github references.
+      provider: 'github'
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+      user: 'noahniuwa'
