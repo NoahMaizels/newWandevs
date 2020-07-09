@@ -1,4 +1,4 @@
-# FinNexus System Documentation
+# WanDevs Wanchain Developer Community Site
 
 These pages are built with MkDocs; for full documentation visit [mkdocs.org](https://mkdocs.org).
 
